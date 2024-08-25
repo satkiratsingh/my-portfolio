@@ -63,7 +63,7 @@ export default function Home() {
             </h2>
 
             <a
-              href="/"
+              href="#projects"
               className="items-center sm:absolute sm:bottom-0 sm:right-0 max-sm:text-[12px] text-[20px] group flex flex-row hover:cursor-pointer"
             >
               <span className="group-hover:underline">More</span>
