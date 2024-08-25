@@ -5,11 +5,19 @@ interface NavButtonProps {
   link: string;
   badge?: number;
   showBadge?: boolean;
+  onClick?: () => void;
 }
 
-const NavButton = ({ children, link, badge, showBadge }: NavButtonProps) => {
+const NavButton = ({
+  children,
+  link,
+  badge,
+  showBadge,
+  onClick,
+}: NavButtonProps) => {
   return (
     <a
+      onClick={onClick}
       href={link}
       className="p-4 leading-none gap-2 group flex flex-row items-center transition-all duration-200 rounded-full hover:bg-white hover:text-black"
     >

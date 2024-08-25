@@ -5,21 +5,24 @@ export interface ExpertiseDescription {
 
 export const expertiseDescription: ExpertiseDescription[] = [
   {
-    title: "Web Development",
+    title: "Website Development",
     description:
-      "Collaborating closely, we'll develop an impactful brand identity for your emerging enterprise. The full spectrum of brand analysis and design is addressed, culminating in a visually stunning, evergreen logo concept.",
+      "I build modern, responsive websites that are tailored to your specific needs. Whether it's a simple landing page or a complex web application, I ensure high performance and seamless user experiences.",
   },
   {
-    title: "Mobile Development",
-    description: "React Native",
+    title: "Mobile App Development",
+    description:
+      "I design and develop intuitive mobile applications that are optimized for both iOS and Android platforms. My focus is on creating apps that are not only functional but also engaging for users.",
   },
   {
-    title: "Backend Development",
-    description: "Express, Django",
+    title: "Full Stack Development",
+    description:
+      "I deliver end-to-end solutions by integrating both front-end and back-end technologies. From database management to user interface design, I ensure your digital products are robust and scalable.",
   },
   {
-    title: "Database",
-    description: "MongoDB, PostgreSQL",
+    title: "Technical Consulting",
+    description:
+      "I provide expert guidance on the best technologies and practices to use for your projects. Whether you're starting from scratch or need help refining an existing product, I'll help you make informed decisions that drive success.",
   },
 ];
 
