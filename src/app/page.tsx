@@ -26,7 +26,7 @@ export default function Home() {
           </h1>
           <a
             href="#projects"
-            className="absolute max-md:bottom-0 max-md:right-10 bottom-8 right-28 dark:bg-[#141414] bg-[#f9f9f9] dark:hover:shadow-gray-400 hover:shadow-md transition-all duration-200 hover:-translate-y-2 flex flex-row items-center rounded-full text-[18px] font-bold float-right p-8 leading-none"
+            className="absolute max-md:bottom-0 max-md:right-10 bottom-8 right-28 dark:bg-[#141414] bg-[#f9f9f9] hover:shadow-[#2e6b8c] hover:shadow-md transition-all duration-200 hover:-translate-y-2 flex flex-row items-center rounded-full text-[18px] font-bold float-right p-8 leading-none"
           >
             SCROLL DOWN{" "}
             <span className="material-symbols-outlined">
@@ -132,7 +132,7 @@ export default function Home() {
         <a
           id="contact"
           href="mailto:satkirat2000@gmail.com"
-          className="dark:bg-[#141414] mt-2 gap-2 hover:cursor-pointer bg-[#f9f9f9] dark:hover:shadow-gray-400 hover:shadow-md transition-all duration-200 hover:-translate-y-2 flex flex-row items-center rounded-full text-lg font-bold float-right p-8 max-md:p-6 leading-none"
+          className="dark:bg-[#141414] mt-2 gap-2 hover:cursor-pointer bg-[#f9f9f9] hover:shadow-[#2e6b8c] hover:shadow-md transition-all duration-200 hover:-translate-y-2 flex flex-row items-center rounded-full text-lg font-bold float-right p-8 max-md:p-6 leading-none"
         >
           satkirat2000@gmail.com{" "}
           <span className="material-symbols-outlined">arrow_outward</span>
@@ -146,7 +146,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/satkirat2000/"
               target="_blank"
               rel="noreferrer"
-              className="flex font-thin hover:font-bold flex-row items-center gap-2 group transition-all duration-200 hover:scale-110"
+              className="flex dark:font-thin hover:font-bold flex-row items-center gap-2 group transition-all duration-200 hover:scale-110"
             >
               <span className="material-symbols-outlined transition-all duration-200 group-hover:rotate-[0deg] rotate-[20deg]">
                 link
@@ -157,7 +157,7 @@ export default function Home() {
               href="https://github.com/satkiratsingh"
               target="_blank"
               rel="noreferrer"
-              className="flex font-thin hover:font-bold flex-row items-center gap-2 group transition-all duration-200 hover:scale-110"
+              className="flex dark:font-thin hover:font-bold flex-row items-center gap-2 group transition-all duration-200 hover:scale-110"
             >
               <span className="material-symbols-outlined transition-all duration-200 group-hover:rotate-[0deg] rotate-[20deg]">
                 code
