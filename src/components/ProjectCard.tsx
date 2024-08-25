@@ -9,15 +9,19 @@ const ProjectCard = ({
   bgGradientTo,
 }: ProjectDescription) => {
   return (
-    <div className="w-full">
+    <div className="w-full group hover:cursor-pointer">
       <div
-        className="w-full overflow-hidden px-12 pt-12 h-[500px] rounded-3xl"
+        className="w-full transition-all duration-200 group-hover:scale-105 overflow-hidden px-12 pt-12 h-[500px] rounded-3xl"
         style={{
           backgroundImage: `linear-gradient(to bottom right, ${bgGradientFrom}, ${bgGradientTo})`,
         }}
       ></div>
-      <h4 className="text-[24px] mt-2">{name}</h4>
-      <p>{description}</p>
+      <h4 className="transition-all duration-200 group-hover:translate-y-4 group-hover:scale-105 text-[24px] mt-2">
+        {name}
+      </h4>
+      <p className="transition-all duration-200 group-hover:translate-y-4 group-hover:scale-105">
+        {description}
+      </p>
     </div>
   );
 };
