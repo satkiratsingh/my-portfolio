@@ -4,32 +4,33 @@ export interface ProjectDescription {
   description: string;
   bgGradientFrom: string;
   bgGradientTo: string;
+  projectLink?: string;
 }
 
 export const projectsDescription: ProjectDescription[] = [
   {
-    thumbnail: "/next.svg",
-    name: "Raw Track",
-    description: "Race tracking app.",
+    thumbnail: "/elsa-montevideo.png",
+    name: "Elsa Montevideo",
+    description: "Software Solutions.",
     bgGradientFrom: "#7A19F3",
     bgGradientTo: "#A952F3",
   },
   {
-    thumbnail: "/next.svg",
+    thumbnail: "/raw_track.png",
     name: "Raw Track",
     description: "Race tracking app.",
     bgGradientFrom: "#b9e31d",
     bgGradientTo: "#c9e26e",
   },
   {
-    thumbnail: "/next.svg",
-    name: "Raw Track",
-    description: "Race tracking app.",
+    thumbnail: "/santa_property.jpeg",
+    name: "Santa Property",
+    description: "Property listing website.",
     bgGradientFrom: "#0f69e7",
     bgGradientTo: "#498ae6",
   },
   {
-    thumbnail: "/next.svg",
+    thumbnail: "/raw_track.png",
     name: "Raw Track",
     description: "Race tracking app.",
     bgGradientFrom: "#e76113",
