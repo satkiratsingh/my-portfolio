@@ -1,8 +1,16 @@
+import ExpertiseCard from "@/components/ExpertiseCard";
 import Navbar from "@/components/Navbar/Navbar";
-import ProjectCard from "@/components/Projects/ProjectCard";
+import ProjectCard from "@/components/ProjectCard";
+import expertiseDescription from "@/static/expertiseDescription";
 import projectsDescription from "@/static/projectsDescription";
 
 export default function Home() {
+  const taglines = [
+    "Full Stack Developer",
+    "Backend Developer",
+    "Frontend Developer",
+  ];
+
   return (
     <main className="min-h-screen">
       <header className="h-screen flex flex-col">
@@ -12,12 +20,15 @@ export default function Home() {
           <h1 className="text-[200px] leading-none font-bold">
             Full Stack Developer
           </h1>
-          <button className="absolute bottom-8 right-28 dark:bg-[#141414] bg-[#f9f9f9] dark:hover:shadow-gray-400 hover:shadow-md transition-all duration-200 hover:-translate-y-2 flex flex-row items-center rounded-full text-lg font-bold float-right p-8 leading-none">
+          <a
+            href="#projects"
+            className="absolute bottom-8 right-28 dark:bg-[#141414] bg-[#f9f9f9] dark:hover:shadow-gray-400 hover:shadow-md transition-all duration-200 hover:-translate-y-2 flex flex-row items-center rounded-full text-lg font-bold float-right p-8 leading-none"
+          >
             SCROLL DOWN{" "}
             <span className="material-symbols-outlined">
               arrow_downward_alt
             </span>
-          </button>
+          </a>
         </div>
 
         <div className="flex flex-1 flex-row items-center justify-between px-28">
@@ -38,7 +49,7 @@ export default function Home() {
       <section id="projects" className="px-28 py-12">
         <div className="flex flex-row justify-between items-center">
           <div>
-            <h2 className="text-[48px]">Projects</h2>
+            <h2 className="text-[48px] font-semibold">Projects</h2>
             <p className="w-[300px]">{`As an experienced developer of modern, user-focused websites and mobile apps, I strive to help you build the digital solution of your dreams.`}</p>
           </div>
 
@@ -67,6 +78,19 @@ export default function Home() {
             ))}
         </div>
       </section>
+
+      <section id="about" className="px-28 py-12">
+        <h2 className="text-[48px] font-semibold">Expertise</h2>
+
+        <div className="grid grid-cols-2 gap-x-60 gap-y-10 mt-12">
+          {expertiseDescription &&
+            expertiseDescription.map((expertise, index) => (
+              <ExpertiseCard key={index} {...expertise} />
+            ))}
+        </div>
+      </section>
+
+      <section id="tagline" className="h-20"></section>
     </main>
   );
 }
